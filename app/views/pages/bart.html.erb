@@ -1,3 +1,106 @@
-This page intentionally left blank.
-
 BART page
+<%= form_tag("/results", method: "get") do %>
+  <%= label_tag(:start, "Starting BART") %>
+  <select class="form-control">
+    <option>12th St. Oakland</option>
+    <option>16th St. Mission</option>
+    <option>19th St. Oakland</option>
+    <option>24th St. Mission</option>
+    <option>Ashby</option>
+    <option>Balboa Park</option>
+    <option>Bay Fair</option>
+    <option>Civic Center</option>
+    <option>Colma</option>
+    <option>Coliseum</option>
+    <option>Oakland Int'l Airport</option>
+    <option>Concord</option>
+    <option>Castro Valley</option>
+    <option>Daly City</option>
+    <option>Downtown Berkeley</option>
+    <option>El Cerrito del Norte</option>
+    <option>Dublin</option>
+    <option>Embarcadero</option>
+    <option>Fremont</option>
+    <option>Fruitvale</option>
+    <option>Glen Park</option>
+    <option>Hayward</option>
+    <option>Lafayette</option>
+    <option>Lake Merritt</option>
+    <option>MacArthur</option>
+    <option>Millbrae</option>
+    <option>Montgomery</option>
+    <option>North Berkeley</option>
+    <option>North Concord</option>
+    <option>Orinda</option>
+    <option>Pleasant Hill</option>
+    <option>Pittsburg/Bay Point</option>
+    <option>El Cerrito Plaza</option>
+    <option>Powell St.</option>
+    <option>Richmond</option>
+    <option>Rockridge</option>
+    <option>San Leandro</option>
+    <option>San Bruno</option>
+    <option>San Francisco Int'l Airport</option>
+    <option>South Hayward"</option>
+    <option>South San Francisco</option>
+    <option>Union City</option>
+    <option>Walnut Creek</option>
+    <option>West Dublin/Pleasanton</option>
+    <option>West Oakland</option>
+  </select>
+  <%= label_tag(:end, "Ending BART") %>
+  <select class="form-control">
+    <option>12th St. Oakland</option>
+    <option>16th St. Mission</option>
+    <option>19th St. Oakland</option>
+    <option>24th St. Mission</option>
+    <option>Ashby</option>
+    <option>Balboa Park</option>
+    <option>Bay Fair</option>
+    <option>Civic Center</option>
+    <option>Colma</option>
+    <option>Coliseum</option>
+    <option>Oakland Int'l Airport</option>
+    <option>Concord</option>
+    <option>Castro Valley</option>
+    <option>Daly City</option>
+    <option>Downtown Berkeley</option>
+    <option>El Cerrito del Norte</option>
+    <option>Dublin</option>
+    <option>Embarcadero</option>
+    <option>Fremont</option>
+    <option>Fruitvale</option>
+    <option>Glen Park</option>
+    <option>Hayward</option>
+    <option>Lafayette</option>
+    <option>Lake Merritt</option>
+    <option>MacArthur</option>
+    <option>Millbrae</option>
+    <option>Montgomery</option>
+    <option>North Berkeley</option>
+    <option>North Concord</option>
+    <option>Orinda</option>
+    <option>Pleasant Hill</option>
+    <option>Pittsburg/Bay Point</option>
+    <option>El Cerrito Plaza</option>
+    <option>Powell St.</option>
+    <option>Richmond</option>
+    <option>Rockridge</option>
+    <option>San Leandro</option>
+    <option>San Bruno</option>
+    <option>San Francisco Int'l Airport</option>
+    <option>South Hayward"</option>
+    <option>South San Francisco</option>
+    <option>Union City</option>
+    <option>Walnut Creek</option>
+    <option>West Dublin/Pleasanton</option>
+    <option>West Oakland</option>
+  </select>
+  <%= submit_tag("Calculate") %>
+
+<% end %>
+
+
+
+
+<% @trackmiles %>
